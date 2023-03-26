@@ -129,9 +129,3 @@ resource "azurerm_virtual_machine" "tfvm001" {
     environment = var.tag
   }
 }
-module "module" {
-  source = "./module"
-  tag = "prod"
-  subnetname = "subnetzub"
-  rgname = "zubrgname"
-}
